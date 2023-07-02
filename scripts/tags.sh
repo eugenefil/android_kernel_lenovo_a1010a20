@@ -102,6 +102,7 @@ all_compiled_sources()
 		case "$i" in
 			*.[cS])
 				j=${i/\.[cS]/\.o}
+				j=${j#$srctree/}
 				if [ -e $j ]; then
 					echo $i
 				fi
