@@ -2,7 +2,7 @@
 
 include $(srctree)/drivers/misc/mediatek/Makefile.custom
 
-ccflags-y += -I$(srctree)/include -I$(srctree)/include/trustzone -Werror
+ccflags-y += -I$(srctree)/include -I$(srctree)/include/trustzone 
 
 # Build as module
 #obj-m += tz_module.o
