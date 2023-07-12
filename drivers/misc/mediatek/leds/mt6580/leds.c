@@ -870,7 +870,7 @@ int mt_mt65xx_led_set_cust(struct cust_mt65xx_led *cust, int level)
                   if(level == 0){
                         LEDS_DEBUG("linmingchuang level=0 brightness_set_cust:go GPIO mode!!!!!\n");
 
-                       FL_Disable();
+                       //FL_Disable();
 #if 0
                        if(mt_set_gpio_out(FLASH_GPIO_EN,GPIO_OUT_ZERO))
 								{LEDS_DEBUG("TORCH  set FLASH_GPIO_EN failed!! \n");}
@@ -882,7 +882,7 @@ int mt_mt65xx_led_set_cust(struct cust_mt65xx_led *cust, int level)
                    }else{
                                LEDS_DEBUG("linmingchuang level=1 brightness_set_cust:go GPIO mode!!!!!\n");
                     
-                              FL_Enable1();
+                              //FL_Enable1();
 
 #if 0
                          	if(mt_set_gpio_out(FLASH_GPIO_EN,GPIO_OUT_ONE))
